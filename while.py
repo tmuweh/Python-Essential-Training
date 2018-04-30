@@ -19,3 +19,20 @@ while b < 1000:
     #same code different lengths
 
 print() # line ending
+
+secret = 'tmuweh'
+pw = ''
+count = 0;
+max_attempt = 5
+
+auth = False
+while pw != secret:
+    count += 1
+    if count > max_attempt:
+        print("Sorry you lavished your 5 trials")
+        break
+    pw = input(f"<{max_attempt - count} trials left>What's the secret word? ")
+else:
+    auth = True
+
+print("Authorized!" if auth else "Calling the police now!")
