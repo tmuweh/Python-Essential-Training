@@ -15,7 +15,7 @@ def factorial100():
 
     num_list = []
     fact = 1
-    for num in range(1, 11):
+    for num in range(1, 101):
         num_list.append(num)
     print(num_list)
     for i in num_list:
